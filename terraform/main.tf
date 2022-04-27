@@ -13,5 +13,13 @@ terraform {
 provider "aws" {
   region = var.aws_region
 
-  default_tags = local.common_tags
+  default_tags {
+      tags = {
+        Project   = "Serverless REST API Tutorial"
+        CreatedAt = formatdate("YYYY-MM-DD", timestamp())
+        ManagedBy = "Terraform"
+        Owner     = "Jamesson Faria"
+        Env       = var.env
+      }
+  }
 }

@@ -26,12 +26,4 @@ locals {
       timeout     = 5
     }
   }
-
-  common_tags = {
-    Project   = "Serverless REST API Tutorial"
-    CreatedAt = formatdate("YYYY-MM-DD", timestamp())
-    ManagedBy = "Terraform"
-    Owner     = "Jamesson Faria"
-    Env       = var.env
-  }
 }
