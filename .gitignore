@@ -19,3 +19,5 @@ plan
 
 # Temp directory
 temp
+
+*.zip
