@@ -10,7 +10,7 @@ variable "aws_region" {
 
 variable "aws_account_id" {
     type = string
-    default = ""
+    default = "963028648626"
 }
 
 variable "service_name" {
